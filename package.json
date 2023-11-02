@@ -1,0 +1,27 @@
+{
+  "name": "leaflet-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vuemap/vue-amap": "^2.0.20",
+    "leaflet": "^1.9.4",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/amap-js-api": "^1.4.14",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vuemap/unplugin-resolver": "^2.0.0",
+    "@vuemap/vue-amap-loca": "^2.0.6",
+    "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.7",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
