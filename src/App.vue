@@ -2,8 +2,7 @@
   <div style="height: 500px;width: 300px">
     <el-amap :pitch="50" :center="center" :zoom="zoom">
       <el-amap-layer-tile :tile-url="url" />
-      <el-amap-loca>
-        <el-amap-loca-icon :source-data="sourceData" :layer-style="layerStyle" />
+      <el-amap-loca :source-data="sourceData" :layer-style="layerStyle">
       </el-amap-loca>
     </el-amap>
   </div>
@@ -11,13 +10,13 @@
 
 <script lang="ts" setup>
 import { ElAmap, ElAmapLayerTile } from '@vuemap/vue-amap'
-import { ElAmapLoca, ElAmapLocaIcon } from "@vuemap/vue-amap-loca";
+import { ElAmapLoca } from "@vuemap/vue-amap-loca";
 import { ref } from "vue";
 
 const center = ref([121.59996, 31.197646]);
 const zoom = ref(14)
 
-const url = 'https://wprd0{1,2,3,4}.is.autonavi.com/appmaptile?x=[x]&y=[y]&z=[z]&size=1&scl=1&style=8&ltype=11'
+const url = location.href + 'map'
 
 const layerStyle = {
   unit: 'px',
