@@ -16,7 +16,9 @@ import { ref } from "vue";
 const center = ref([121.59996, 31.197646]);
 const zoom = ref(14)
 
-const url = location.href + 'map'
+// const url = 'https://wprd0{1,2,3,4}.is.autonavi.com/appmaptile?x=[x]&y=[y]&z=[z]&size=1&scl=1&style=8&ltype=11'
+
+const url = location.href + 'map/[x]/[y]/[z]/tile.png'
 
 const layerStyle = {
   unit: 'px',
